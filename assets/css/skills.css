@@ -1,0 +1,150 @@
+/*------------------------------------------------------------------
+    Project: Ibtissam Errabhy's portfolio
+    Last change: 30/08/2025
+    developer: Yahia mohamed
+    Thanks to Upsqode for the theme 
+------------------------------------------------------------------ */
+/*-----------------------[Table of contents]------------------------ 
+1.Skills Page CSS 
+2.Section from the resume page
+------------------------------------------------------------------ */
+/*-----------------------[ 1.Skills Page CSS  ]------------------------*/
+.lan_skill {
+    color: var(--card-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+.drop-menu .menu-content .navbar-side .skills_page {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(23%) saturate(5408%) hue-rotate(72deg) brightness(95%) contrast(89%) !important;
+}
+.skill_circle_main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding-top: 30px;
+    gap: 30px;
+}
+.progress_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+.circle {
+    position: relative;
+    text-align: center;
+}
+.circle canvas {
+    width: 150px !important;
+    height: 150px !important;
+}
+.circle div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    color: var(--card-text);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+.subject {
+    color: var(--card-text);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 10px;
+}
+.hard_skill {
+    padding-top: 40px;
+}
+.hard_skill_group {
+    border-radius: 75px;
+    border: 2px solid var(--one-background);
+    width: 150px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hard_skill_group:hover {
+    border: 2px solid #55E6A5;
+}
+.hard_skill_counter {
+    color: #55E6A5;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0;
+}
+.figma {
+    filter: var(--nav-menu-icon);
+}
+.hard_skill_group:hover .figma {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(26%) saturate(5679%) hue-rotate(66deg) brightness(122%) contrast(79%);
+}
+.count:after {
+    content: "%";
+    display: inline-block;
+}
+
+/*------------------ 2- Section from the skills page-----------------------------------------*/
+.education {
+    display: flex;
+    position: relative;
+}
+.education_space {
+    margin-bottom: 25px;
+}
+.small_yellow_border_main {
+    padding-left: 20px;
+}
+
+.bachelor {
+    color: var(--card-text);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.cursus {
+    color: var(--card-sub-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+.small_yellow_border {
+    border: 2px solid var(--card-text);
+    border-radius: 100%;
+    padding: 5px;
+    background-color: var(--card-background);
+}
+
+.small_yellow_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #55E6A5;
+}
+.envato_group_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}

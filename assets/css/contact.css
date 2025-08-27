@@ -1,0 +1,201 @@
+/*------------------------------------------------------------------
+    Project: Ibtissam Errabhy's portfolio
+    Last change: 30/08/2025
+    developer: Yahia mohamed
+    Thanks to Upsqode for the theme
+------------------------------------------------------------------ */
+/*-----------------------[Table of contents]------------------------ 
+1.Contact Us CSS 
+2.Instagram CSS
+------------------------------------------------------------------ */
+
+/*-----------------------[ 1.Contact Us CSS ]------------------------*/
+.drop-menu .menu-content .navbar-side .contact_page {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(23%) saturate(5408%) hue-rotate(72deg) brightness(95%) contrast(89%) !important;
+}
+
+.material-icons {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.material-icons:hover {
+    color: var(--button-color-hover);
+}
+
+.send_message {
+    margin: 0;
+}
+
+.send_message:hover {
+    color: var(--button-color-hover);
+}
+
+.message2 {
+    height: 120px;
+}
+
+.contact_number_main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact_number a {
+    color: var(--card-sub-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+.contact_number a:hover {
+    color: #55E6A5;
+}
+
+/*-----------------------[ 2.Instagram CSS ]------------------------*/
+
+.instagram-profile {
+
+    width: 100%;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+/* === Top Navigation (logo + buttons) === */
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    background: #fafafa;
+}
+
+.logo {
+    width: 25%;
+}
+
+.nav-content button {
+    padding: 6px 12px;
+    margin-left: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #fff;
+    transition: background 0.2s;
+}
+
+.nav-content button:hover {
+    background: #f5f5f5;
+}
+
+.nav-content .primary {
+    background: #3897f0;
+    color: #fff;
+    border: none;
+}
+
+.nav-content .primary:hover {
+    background: #3183d9;
+}
+
+/* === Profile Header === */
+.insta-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.insta-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid transparent;
+    background-image: linear-gradient(white, white),
+        linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.insta-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.insta-name a {
+    text-decoration: none;
+    color: #000;
+}
+
+.insta-name a:hover {
+    text-decoration: underline;
+}
+
+.insta-bio {
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* === Posts Grid === */
+.insta-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 10px;
+}
+
+.insta-posts img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .instagram-profile {
+        width: 65%;
+        margin-left: 17.5%;
+    }
+
+    .insta-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .insta-name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-profile {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .insta-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .insta-avatar {
+        margin: 0 0 10px 0;
+    }
+
+    .insta-posts {
+        grid-template-columns: 1fr;
+    }
+}
